@@ -1,8 +1,14 @@
+package abstractClasses;
+
 import java.util.Arrays;
 import java.util.Random;
 
 public abstract class Aggregate {
     protected int[] a;
+
+    public Aggregate(int[] a) {
+        this.a = a;
+    }
 
     public void fillArray(int n) {
         a = new int[n];
@@ -13,9 +19,13 @@ public abstract class Aggregate {
         }
     }
 
+    public int[] getA() {
+        return a;
+    }
+
     @Override
     public String toString() {
-        return "Aggregate{" +
+        return "abstractClasses.Aggregate{" +
                 "a=" + Arrays.toString(a) +
                 '}';
     }

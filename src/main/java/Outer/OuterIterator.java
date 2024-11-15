@@ -1,3 +1,5 @@
+package Outer;
+
 public interface OuterIterator {
     void reset();
     boolean hasNext();

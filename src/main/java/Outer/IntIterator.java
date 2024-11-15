@@ -1,3 +1,5 @@
+package Outer;
+
 public class IntIterator implements OuterIterator {
     private int pos = -1;
     private OuterAggregate owner;
@@ -13,7 +15,7 @@ public class IntIterator implements OuterIterator {
 
     @Override
     public boolean hasNext() {
-        return pos < owner.a.length - 1;
+        return pos < owner.getA().length - 1;
     }
 
     @Override
@@ -23,6 +25,6 @@ public class IntIterator implements OuterIterator {
 
     @Override
     public int getContent() {
-        return owner.a[pos];
+        return owner.getA()[pos];
     }
 }

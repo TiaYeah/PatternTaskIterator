@@ -1,3 +1,5 @@
+package Inner;
+
 public class Sum implements InnerIterator {
     private int sum = 0;
 
